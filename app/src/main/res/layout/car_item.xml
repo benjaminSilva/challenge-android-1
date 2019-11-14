@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/tv_numberCar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <CheckBox
+                android:id="@+id/cb_aprovacaoPendente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/aprova_o_pendente"
+                android:clickable="false"
+                android:buttonTint="@color/colorPrimary"
+                app:layout_constraintStart_toStartOf="@+id/guideline5"
+                app:layout_constraintTop_toBottomOf="@+id/tv_numberCar" />
+
+            <CheckBox
+                android:id="@+id/cb_contratoAprovado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/contrato_aprovado"
+                android:clickable="false"
+                android:buttonTint="@color/colorPrimary"
+                app:layout_constraintStart_toStartOf="@+id/cb_aprovacaoPendente"
+                app:layout_constraintTop_toBottomOf="@+id/cb_aprovacaoPendente" />
+
+            <CheckBox
+                android:id="@+id/cb_pedidoFeito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/pedido_feito_na_montador"
+                android:clickable="false"
+                android:buttonTint="@color/colorPrimary"
+                app:layout_constraintStart_toStartOf="@+id/cb_aprovacaoPendente"
+                app:layout_constraintTop_toBottomOf="@+id/cb_contratoAprovado" />
+
+            <CheckBox
+                android:id="@+id/cb_carroEstoque"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/carro_em_estoque"
+                android:clickable="false"
+                android:buttonTint="@color/colorPrimary"
+                app:layout_constraintStart_toStartOf="@+id/cb_aprovacaoPendente"
+                app:layout_constraintTop_toBottomOf="@+id/cb_pedidoFeito" />
+
+            <CheckBox
+                android:id="@+id/cb_agendamentoEntrega"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/agendamento_de_entrega"
+                android:clickable="false"
+                android:buttonTint="@color/colorPrimary"
+                app:layout_constraintStart_toStartOf="@+id/cb_aprovacaoPendente"
+                app:layout_constraintTop_toBottomOf="@+id/cb_carroEstoque" />
+
+            <CheckBox
+                android:id="@+id/cb_carroEntregue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="24dp"
+                android:text="@string/carro_entregue"
+                android:clickable="false"
+                android:buttonTint="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/cb_aprovacaoPendente"
+                app:layout_constraintTop_toBottomOf="@+id/cb_agendamentoEntrega" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.15" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Desafio</string>
+
+    //Tela inicial Login
+    <string name="email">E-Mail</string>
+    <string name="senha">Senha</string>
+    <string name="fazer_login">Fazer Login</string>
+    <string name="fa_a_seu_login_com_e_mail_n_e_senha_de_acesso">Faça seu login com e-mail\n e senha de acesso</string>
+
+    //Tela De perfil
+    <string name="meu_perfil">Meu Perfil</string>
+    <string name="minhas_assinaturas">Minhas assinaturas</string>
+    <string name="sair">Sair</string>
+
+    //CheckBoxes
+    <string name="carroModel">#%1$d - %2$s</string>
+    <string name="aprova_o_pendente">Aprovação Pendente</string>
+    <string name="contrato_aprovado">Contrato Aprovado</string>
+    <string name="pedido_feito_na_montador">Pedido feito na montador</string>
+    <string name="carro_em_estoque">Carro em estoque</string>
+    <string name="agendamento_de_entrega">Agendamento de entrega</string>
+    <string name="carro_entregue">Carro entregue</string>
+    <string name="textview">TextView</string>
+    
+    //CarDetails
+    <string name="prazo">Entrega em até %1$d dias úteis</string>
+    <string name="preco">R$%1$s</string>
+    <string name="marca_modelo_ano">%1$s %2$s %3$d</string>
+    <string name="marca_ano">%1$s %2$d</string>
+    <string name="km">Carro %1$dkm</string>
+    <string name="meses"><big><big>%1$d</big></big>\n<small>Meses</small></string>
+    <string name="kilometros"><big><big>%1$d</big></big>\n<small>mil km</small></string>
+    <string name="kmAdicional"><big><big>R$%1$s</big></big>\n<small>adicional</small></string>
+    <string name="informa_es_da_assinatura">Informações da Assinatura</string>
+    <string name="qtd_portas">%1$d portas</string>
+    <string name="motor">Motor %1$s</string>
+    <string name="a_partir_de">A partir de</string>
+</resources>
